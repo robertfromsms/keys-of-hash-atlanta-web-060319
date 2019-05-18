@@ -1,13 +1,17 @@
 class Hash
   def keys_of(*arguments)
-    answer = []
     arguments.each {|argument|
       self.each {|key, value|
-        if value == argument
-          answer.push(key)
-        end
+        puts arguments
+        puts key
+        puts value
       }
     }
-    return answer
   end
 end
+
+x = {a: "b", c: "d", e: "f"}
+
+puts x
+
+x.keys_of(1,2,3,4,5)
