@@ -12,4 +12,6 @@ end
 
 x = {a: "b", c: "d", e: "f"}
 
+puts x
+
 keys_of(1,2,3,4,5)
